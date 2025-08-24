@@ -1,0 +1,292 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace with the desired weight */
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px 40px 90px 40px;
+  text-align: center;
+}
+
+/* Banner */
+.banner {
+  background-color: #FFCF40;
+  color: #111;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 15px;
+  font-size: 16px;
+}
+
+
+.bricolage-grotesque {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace with the desired weight */
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Headings */
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  line-height: 54px;
+}
+
+.cta {
+  color: #7F1009;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+  background-color: #00F663;
+  color: #000000;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.btn:hover {
+  background-color: #0bd25a;
+}
+
+.body-section {
+  padding-bottom: 4em;
+}
+
+/* Video *
+.video iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Features */
+.features {
+  list-style: none;
+  text-align: left;
+  margin-top: 30px;
+  padding-left: 0;
+}
+
+.features li {
+  margin-bottom: 10px;
+  padding-left: 1.5em;
+  position: relative;
+}
+
+.features li::before {
+  content: '\2713';
+  color: #7F1009;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.icon-separator {
+  position: relative;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.separator-line {
+  height: 2px;
+  background-color: #7F1009;
+  width: 100%;
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: -14px; /* raise it above the line */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 2px solid #7F1009;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-icon {
+  color: #7F1009;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#bw-features {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+}
+
+#video-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+ #vcaption {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    font-size: 13px;
+  }
+
+#video {
+  width: 500px;
+  height: 400px;
+}
+
+.image {
+  width: 500px;
+}
+
+/* Sticky Bottom Bar */
+.sticky-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #7F1009;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.sticky-left p {
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.sticky-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.timer {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.register-btn {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.register-btn:hover {
+  background-color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+    padding-bottom: 9.5em;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    line-height: 33px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  #video-container {
+
+  }
+
+  #video {
+  width: 200px;
+  height: 400px;
+  }
+
+  .image {
+    width: 240px;
+ }
+
+
+  .timer {
+    font-size: 12px;
+  }
+
+  .register-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+    width: 100%;
+  }
+
+  .sticky-bar {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .sticky-left, .sticky-right {
+    width: 100%;
+  }
+
+  .sticky-left p, .timer {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  footer {
+    margin-bottom: 12em;
+  }
+}
